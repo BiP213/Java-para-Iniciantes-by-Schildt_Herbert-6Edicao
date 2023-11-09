@@ -12,16 +12,16 @@ public class GalToLit {
         do {
             double litros; // armazena a conversão para litros
 
-            Scanner ObjGaloes = new Scanner(System.in);
-            System.out.println("Digite o número de galões a ser convertido: ");
-            double galoes = ObjGaloes.nextDouble(); // números de galões
+            Scanner objGaloes = new Scanner(System.in);
+            System.out.print("Digite o número de galões a ser convertido: ");
+            double galoes = objGaloes.nextDouble(); // números de galões
 
             litros = galoes * 3.7854; // converte para litros
             System.out.println(galoes + " galões são equivalentes a " + litros + " litros.");
-            Scanner ObjControle = new Scanner(System.in);
+            Scanner objControle = new Scanner(System.in);
             System.out.println("Deseja realizar outra conversão?");
             System.out.println("Digite '0' para finalizar o programa ou outro número para continuar: ");
-            i = ObjControle.nextShort(); // menor alocação de memória que int, de 0 a 255
+            i = objControle.nextShort(); // menor alocação de memória que int, de 0 a 255
 
         } while (i != 0);
     }
